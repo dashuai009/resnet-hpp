@@ -42,9 +42,7 @@ public:
 //                        /*kerner_size = */ 7, /*stride = */ 2, /*padding = */ 3,
 //                        /*groups = */ 1, /*dilation = */ 1, /*bias = */ false)
                 });
-        std::cout << "resnet m_conv1:" << m_conv1 << '\n';
         m_bn1 = register_module("bn1", torch::nn::BatchNorm2d{m_inplanes});
-        std::cout << "resnet m_bn1:" << m_bn1 << '\n';
         m_relu = register_module("relu", torch::nn::ReLU{true});
         m_maxpool = register_module(
                 "maxpool",
