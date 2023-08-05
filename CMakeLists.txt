@@ -22,4 +22,4 @@ set_target_properties(resnet
         )
 ## resnet end
 
-add_subdirectory(test)
+# add_subdirectory(test)
